@@ -1,3 +1,3 @@
 # Technical Assessment Luftborn
 
-Using IVO Design Pattern 
+Using SwiftUI with IVO Design Pattern 
