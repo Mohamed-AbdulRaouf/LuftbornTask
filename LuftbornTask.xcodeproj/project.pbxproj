@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D9EDBCD2285DE6670067255A /* LuftbornTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDBCD1285DE6670067255A /* LuftbornTaskApp.swift */; };
-		D9EDBCD4285DE6670067255A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDBCD3285DE6670067255A /* ContentView.swift */; };
+		D9EDBCD4285DE6670067255A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDBCD3285DE6670067255A /* MainView.swift */; };
 		D9EDBCD6285DE66D0067255A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EDBCD5285DE66D0067255A /* Assets.xcassets */; };
 		D9EDBCD9285DE66D0067255A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9EDBCD8285DE66D0067255A /* Preview Assets.xcassets */; };
+		D9EDBCE0285DE9890067255A /* ExecuterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDBCDF285DE9890067255A /* ExecuterData.swift */; };
+		D9EDBCE2285DEABF0067255A /* MainView+Observed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDBCE1285DEABF0067255A /* MainView+Observed.swift */; };
+		D9EDBCE4285DFB4C0067255A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EDBCE3285DFB4C0067255A /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9EDBCCE285DE6670067255A /* LuftbornTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuftbornTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EDBCD1285DE6670067255A /* LuftbornTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuftbornTaskApp.swift; sourceTree = "<group>"; };
-		D9EDBCD3285DE6670067255A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9EDBCD3285DE6670067255A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D9EDBCD5285DE66D0067255A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9EDBCD8285DE66D0067255A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9EDBCDF285DE9890067255A /* ExecuterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuterData.swift; sourceTree = "<group>"; };
+		D9EDBCE1285DEABF0067255A /* MainView+Observed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainView+Observed.swift"; sourceTree = "<group>"; };
+		D9EDBCE3285DFB4C0067255A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,10 @@
 		D9EDBCD0285DE6670067255A /* LuftbornTask */ = {
 			isa = PBXGroup;
 			children = (
-				D9EDBCD1285DE6670067255A /* LuftbornTaskApp.swift */,
-				D9EDBCD3285DE6670067255A /* ContentView.swift */,
+				D9EDBCE6285E11470067255A /* App */,
+				D9EDBCE5285E11390067255A /* Identifiable */,
+				D9EDBCE8285E11930067255A /* View */,
+				D9EDBCE7285E118B0067255A /* Observed */,
 				D9EDBCD5285DE66D0067255A /* Assets.xcassets */,
 				D9EDBCD7285DE66D0067255A /* Preview Content */,
 			);
@@ -65,6 +73,39 @@
 				D9EDBCD8285DE66D0067255A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9EDBCE5285E11390067255A /* Identifiable */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDBCDF285DE9890067255A /* ExecuterData.swift */,
+			);
+			path = Identifiable;
+			sourceTree = "<group>";
+		};
+		D9EDBCE6285E11470067255A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDBCD1285DE6670067255A /* LuftbornTaskApp.swift */,
+				D9EDBCE3285DFB4C0067255A /* Constant.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D9EDBCE7285E118B0067255A /* Observed */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDBCE1285DEABF0067255A /* MainView+Observed.swift */,
+			);
+			path = Observed;
+			sourceTree = "<group>";
+		};
+		D9EDBCE8285E11930067255A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9EDBCD3285DE6670067255A /* MainView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9EDBCD4285DE6670067255A /* ContentView.swift in Sources */,
+				D9EDBCE0285DE9890067255A /* ExecuterData.swift in Sources */,
+				D9EDBCD4285DE6670067255A /* MainView.swift in Sources */,
+				D9EDBCE4285DFB4C0067255A /* Constant.swift in Sources */,
 				D9EDBCD2285DE6670067255A /* LuftbornTaskApp.swift in Sources */,
+				D9EDBCE2285DEABF0067255A /* MainView+Observed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
